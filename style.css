@@ -1,0 +1,144 @@
+.main-content {
+    height: 1000px;
+    background-color: rgb(234, 234, 246);
+    display: grid;
+     grid-template-columns: 300px 700px;
+} 
+
+
+.left-section {
+    height: 1000px;
+    background-color: grey;
+    width: 300px; 
+}
+
+.left-content{
+  padding: 1rem;
+}
+
+.profile-picture{
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+    display: block;
+     margin: auto; 
+   text-align: center;
+   
+    
+} 
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem;
+    letter-spacing: 0.02;
+    text-transform: uppercase;
+}
+
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+.description{
+     font-size:0.75rem;
+     /* font size should be 0.75 rem    */
+    padding:1rem ;
+    text-align: center;
+}
+.skill{
+font-size: 0.75rem;
+/* font size should be 0.75rem */
+text-align: center;
+padding-top: 1rem;
+padding-bottom: 0.5rem;
+}
+
+.skill-name{
+    font: size 0.65rem;
+    /* font size should be 0.65 rem */
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    align-content: space-between;
+}
+
+.right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.right-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h3{
+  color: rgba(66, 66, 143, 0.838); 
+ font: weight 50px; 
+}
+p{
+    text-transform: none;
+      font-weight: 500; 
+}
+i { 
+  color: rgba(66, 66, 143, 0.838) ;
+    font-weight: 200; 
+}
+#right-side{
+    font-size: 22px;
+    color: rgba(66, 66, 143, 0.838);
+    letter-spacing: 1px;
+
+}
+#right-para{
+   font-size: 19px;
+   letter-spacing: 1px;
+
+}
+/* For width >= 674px */
+@media (min-width: 674px) {
+    .main-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 20px;
+    }
+  
+    .left-section {
+      grid-column: 1 / 2;
+      width: 300px;
+    }
+  
+    .right-section {
+      grid-column: 2 / 3;
+      width: 700px;
+    }
+  }
+  
+  /* For width < 674px */
+  @media (max-width: 674px) {
+    .main-content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .left-section {
+      grid-column: 1 / 2;
+    }
+  
+    .right-section {
+      grid-column: 1 / 2;
+    }
+  }
+  
+  /* Set the width and minimum height of the main-content class */
+  .main-content {
+     width: 90%;
+     margin: auto;
+    min-height: 1000px;
+  }
+  
